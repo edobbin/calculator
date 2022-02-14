@@ -10,8 +10,7 @@ body{
     min-height:100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 55px);
-    background: linear-gradient(to right, cyan, green)
-    ;
+    background: linear-gradient(to right, cyan, green);
 }
 
 
@@ -22,6 +21,7 @@ body{
 button{
     font-size: large;
     font-weight: bolder;
+    outline-color: white;
     
     /* background-color: rgb(189, 189, 189); */
     /* border-radius: 30px; */
@@ -29,11 +29,29 @@ button{
 
 .grid-Style button a:hover{
 background-color: rgb(114, 114, 114);
+outline-color: white;
+outline-style: auto;
 }
 .output{
     grid-column: 1/-1;
     background-color: rgba(88, 88, 88, 0.555);
     border-radius: 30;
     display: flex;
+    position: relative;
 
+}
+
+.current{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 70px;
+}
+ .previous{
+    color: rgb(231, 231, 231);
+    position: absolute;
+    top: 0;
+    left:0;
+    font-size: 30px;
 }
